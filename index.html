@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traverse Calculator</h1>
+
+        <!-- Input for observed angles -->
+        <div class="input-section">
+            <h2>Observed Angles</h2>
+            <label for="angles">Enter observed angles (degrees):</label>
+            <input type="text" id="angles" placeholder="e.g., 30, 45, 60">
+        </div>
+
+        <!-- Input for distances -->
+        <div class="input-section">
+            <h2>Distances</h2>
+            <label for="distances">Enter distances between stations (meters):</label>
+            <input type="text" id="distances" placeholder="e.g., 100, 150, 200">
+        </div>
+
+        <!-- Input for known stations coordinates -->
+        <div class="input-section">
+            <h2>Known Stations Coordinates</h2>
+            <label for="coordsA">Coordinates of Station A (lat, lon):</label>
+            <input type="text" id="coordsA" placeholder="e.g., 27.7172, 85.3240">
+            <label for="coordsB">Coordinates of Station B (lat, lon):</label>
+            <input type="text" id="coordsB" placeholder="e.g., 27.7182, 85.3250">
+        </div>
+
+        <!-- Button to calculate -->
+        <button id="calculateBtn">Calculate</button>
+
+        <!-- Output -->
+        <div class="output-section">
+            <h2>Results</h2>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
